@@ -1,0 +1,20 @@
+server {
+    listen 80;
+    root '/usr/share/nginx/iotlabs';
+
+    index index.html;
+
+    charset utf-8;
+
+
+    access_log off;
+    error_log  /var/log/nginx/iotlabs-dev-error.log error;
+
+    sendfile off;
+
+    client_max_body_size 100m;
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
