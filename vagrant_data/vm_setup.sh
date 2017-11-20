@@ -60,4 +60,4 @@ sudo service nginx restart
 echo " `pwd` "
 cd /usr/share/nginx/iotlabs
 npm install express --save
-nohup nodejs app.js &
+nodejs app.js
